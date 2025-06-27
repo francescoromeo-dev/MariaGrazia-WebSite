@@ -50,7 +50,9 @@
             <h2>La nostra struttura</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Accogliente casa vacanze immersa nella tranquillità, perfetta per famiglie, coppie o amici. Dotata di ogni comfort, spazi luminosi, area esterna privata e a pochi minuti da spiagge, sentieri o attrazioni locali. Il luogo perfetto per rigenerarsi e godersi ogni momento.</p>
+                    <p>Accogliente casa vacanze immersa nella tranquillità, perfetta per famiglie, coppie o amici.
+                        Dotata di ogni comfort, spazi luminosi, area esterna privata e a pochi minuti da spiagge,
+                        sentieri o attrazioni locali. Il luogo perfetto per rigenerarsi e godersi ogni momento.</p>
                     <ul class="features-list">
                         <li>6 posti letto</li>
                         <li>Idromassaggio</li>
@@ -59,7 +61,7 @@
                     </ul>
                 </div>
                 <div class="about-image">
-                    <img src="" alt="about image"/>
+                    <img src="" alt="about image" />
                 </div>
             </div>
         </div>
@@ -70,28 +72,28 @@
             <h2>Galleria della casa</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="" alt=""/>
+                    <img src="" alt="" />
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt=""/>
+                    <img src="" alt="" />
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt=""/>
+                    <img src="" alt="" />
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt=""/>
+                    <img src="" alt="" />
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt=""/>
+                    <img src="" alt="" />
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt=""/>
+                    <img src="" alt="" />
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt=""/>
+                    <img src="" alt="" />
                 </div>
                 <div class="gallery-item">
-                    <img src="" alt=""/>
+                    <img src="" alt="" />
                 </div>
             </div>
         </div>
@@ -106,14 +108,133 @@
                 <h3>Wifi gratuito</h3>
             </div>
             <div class="services-item">
-                
+                <div class="services-icon">
+                    <!-- Aggiungere icona parcheggio-->
+                </div>
+                <h3>Parcheggio</h3>
+                <p>Posto auto privato interno alla struttura</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">
+                    <!-- Icona Cucina -->
+                </div>
+                <h3>Cucina Attrezzata</h3>
+                <p>Cucina completa di tutti gli elettrodomestici</p>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">
+                    <!-- Icona Aria Condizionata -->
+                </div>
+                <h3>Aria Condizionata</h3>
+                <p>Clima controllato in tutti gli ambienti</p>
             </div>
         </div>
     </section>
 
-    <section id="contatti">
-
+    <section id="contatti" class="contact">
+        <div class="container">
+            <h2>Contatti e Prenotazioni</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Telefono</h3>
+                        <p><a href="tel:+393332190517">+39 333 219 0517</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:ddmercurio@gmail.com">ddmercurio@gmail.com</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/393332190517">Scrivici su WhatsApp</a></p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Indirizzo</h3>
+                        <p>Strada Vicinale Corpo di Guardia 11<br>Città di Palermo (PA)</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Richiedi Informazioni</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome e Cognome *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefono</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="checkin">Check-in</label>
+                                <input type="date" id="checkin" name="checkin">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check-out</label>
+                                <input type="date" id="checkout" name="checkout">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Numero ospiti</label>
+                            <select id="guests" name="guests">
+                                <option value="">Seleziona</option>
+                                <option value="1">1 ospite</option>
+                                <option value="2">2 ospiti</option>
+                                <option value="3">3 ospiti</option>
+                                <option value="4">4 ospiti</option>
+                                <option value="5">5+ ospiti</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Messaggio</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Scrivi qui la tua richiesta..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Invia Richiesta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Casa Vacanze Maria Grazia</h3>
+                    <p>Il tuo soggiorno perfetto</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Utili</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="WhatsApp">WA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Casa Vacanze Maria Grazia. Tutti i diritti riservati.</p>
+                <p>P.IVA: XXXXXXXXXXX | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Termini e
+                        Condizioni</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
