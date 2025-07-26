@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa vacanze Maria Grazia</title>
     <link rel="stylesheet" href="css/index-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -89,15 +90,6 @@
                 <div class="gallery-item">
                     <img src="img/gallery-6.jpg" alt="gallery-item" />
                 </div>
-                <div class="gallery-item">
-                    <img src="img/gallery-7.jpg" alt="gallery-item" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/gallery-8.jpg" alt="gallery-item" />
-                </div>
-                <div class="gallery-item">
-                    <img src="img/gallery-9.jpg" alt="gallery-item" />
-                </div>
             </div>
         </div>
     </section>
@@ -106,42 +98,44 @@
         <div class="services-grid">
             <div class="services-item">
                 <div class="services-icon">
-                    <!-- Aggiungere icona wifi-->
+                    <i class="fas fa-wifi"></i>
                 </div>
                 <h3>Wifi gratuito</h3>
                 <p>Wifi veloce e gratuito a tua disposizione</p>
             </div>
+
             <div class="services-item">
                 <div class="services-icon">
-                    <!-- Aggiungere icona parcheggio-->
+                    <i class="fa-solid fa-square-parking"></i>
                 </div>
                 <h3>Parcheggio privato</h3>
                 <p>Posto auto privato interno alla struttura</p>
             </div>
-            <div class="service-item">
-                <div class="service-icon">
-                    <!-- Icona Cucina -->
+
+            <div class="services-item">
+                <div class="services-icon">
+                    <i class="fas fa-utensils"></i>
                 </div>
                 <h3>Cucina Attrezzata</h3>
                 <p>Cucina completa di tutti gli elettrodomestici</p>
             </div>
-            <div class="service-item">
-                <div class="service-icon">
-                    <!-- Icona Aria Condizionata -->
+            <div class="services-item">
+                <div class="services-icon">
+                    <i class="fas fa-fan"></i>
                 </div>
                 <h3>Aria Condizionata</h3>
                 <p>Clima controllato in tutti gli ambienti</p>
             </div>
-            <div class="service-item">
-                <div class="service-icon">
-                    <!-- Icona -->
+            <div class="services-item">
+                <div class="services-icon">
+                    <i class="fa-solid fa-toilet"></i>
                 </div>
                 <h3>Bagno privato</h3>
                 <p>Bagni appena ristrutturati per il tuo comfort</p>
             </div>
-            <div class="service-item">
-                <div class="service-icon">
-                    <!-- Icona -->
+            <div class="services-item">
+                <div class="services-icon">
+                    <i class="fa-solid fa-hot-tub-person"></i>
                 </div>
                 <h3>Idromassaggio</h3>
                 <p>Goditi il tramonto nella tua spa personale</p>
@@ -153,68 +147,53 @@
     <section id="contatti" class="contact">
         <div class="container">
             <h2>Contatti e Prenotazioni</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Telefono</h3>
-                        <p><a href="tel:+393332190517">+39 333 219 0517</a></p>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
                     </div>
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p><a href="mailto:ddmercurio@gmail.com">ddmercurio@gmail.com</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>WhatsApp</h3>
-                        <p><a href="https://wa.me/393332190517">Scrivici su WhatsApp</a></p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Indirizzo</h3>
-                        <p>Strada Vicinale Corpo di Guardia 11<br>Città di Palermo (PA)</p>
-                    </div>
+                    <h3>Telefono</h3>
+                    <p><a href="tel:+393332190517">+39 333 219 0517</a></p>
                 </div>
-                <div class="contact-form">
-                    <h3>Richiedi Informazioni</h3>
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Nome e Cognome *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Telefono</label>
-                            <input type="tel" id="phone" name="phone">
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="checkin">Check-in</label>
-                                <input type="date" id="checkin" name="checkin">
-                            </div>
-                            <div class="form-group">
-                                <label for="checkout">Check-out</label>
-                                <input type="date" id="checkout" name="checkout">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="guests">Numero ospiti</label>
-                            <select id="guests" name="guests">
-                                <option value="">Seleziona</option>
-                                <option value="1">1 ospite</option>
-                                <option value="2">2 ospiti</option>
-                                <option value="3">3 ospiti</option>
-                                <option value="4">4 ospiti</option>
-                                <option value="5">5+ ospiti</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Messaggio</label>
-                            <textarea id="message" name="message" rows="4"
-                                placeholder="Scrivi qui la tua richiesta..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Invia Richiesta</button>
-                    </form>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope-open"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p><a href="mailto:ddmercurio@gmail.com">ddmercurio@gmail.com</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/393332190517">Scrivici su WhatsApp</a></p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Indirizzo</h3>
+                    <p>Strada Vicinale Corpo di Guardia 11<br>Città di Palermo (PA)</p>
+                </div>
+                
+                <div class="contact-card booking-card">
+                    <div class="booking-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Booking.com</h3>
+                    <p><a href="#" target="_blank">Prenota su Booking</a></p>
+                </div>
+                
+                <div class="contact-card airbnb-card">
+                    <div class="booking-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Airbnb</h3>
+                    <p><a href="#" target="_blank">Prenota su Airbnb</a></p>
                 </div>
             </div>
         </div>
@@ -228,32 +207,13 @@
                     <h3>Casa Vacanze Maria Grazia</h3>
                     <p>Il tuo soggiorno perfetto</p>
                 </div>
-                <div class="footer-section">
-                    <h4>Link Utili</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#servizi">Servizi</a></li>
-                        <li><a href="#contatti">Contatti</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Seguici</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">FB</a>
-                        <a href="#" aria-label="Instagram">IG</a>
-                        <a href="#" aria-label="WhatsApp">WA</a>
-                    </div>
-                </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Casa Vacanze Maria Grazia. Tutti i diritti riservati.</p>
-                <p>P.IVA: XXXXXXXXXXX | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Termini e
+                <p><a href="pages/privacy.html">Privacy Policy</a> | <a href="pages/terms.html">Termini e
                         Condizioni</a></p>
             </div>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 
 </html>

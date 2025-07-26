@@ -299,7 +299,7 @@ nav {
     margin: 0 auto;
 }
 
-.services-item, .service-item {
+.services-item {
     text-align: center;
     padding: 2.5rem 1.5rem;
     background: #f8fffe;
@@ -308,12 +308,12 @@ nav {
     border: 1px solid rgba(143, 188, 143, 0.2);
 }
 
-.services-item:hover, .service-item:hover {
+.services-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(44, 85, 48, 0.1);
 }
 
-.services-icon, .service-icon {
+.services-icon {
     width: 70px;
     height: 70px;
     background: #8fbc8f;
@@ -326,14 +326,14 @@ nav {
     color: white;
 }
 
-.services-item h3, .service-item h3 {
+.services-item h3 {
     font-size: 1.4rem;
     color: #2c5530;
     margin-bottom: 1rem;
     font-weight: 600;
 }
 
-.services-item p, .service-item p {
+.services-item p {
     color: #5a6c57;
     line-height: 1.6;
 }
@@ -348,105 +348,105 @@ nav {
     font-size: 2.5rem;
     text-align: center;
     color: #2c5530;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     font-weight: 600;
 }
 
-.contact-content {
+.contact-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.contact-item h3 {
-    color: #2c5530;
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-.contact-item a {
-    color: #5a6c57;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-item a:hover {
-    color: #2c5530;
-}
-
-.contact-form {
+.contact-card {
     background: white;
-    padding: 2.5rem;
+    padding: 2.5rem 2rem;
     border-radius: 20px;
-    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(143, 188, 143, 0.1);
 }
 
-.contact-form h3 {
-    color: #2c5530;
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(44, 85, 48, 0.15);
+}
+
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #8fbc8f, #6ba06b);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.booking-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    color: white;
+}
+
+.booking-card .booking-icon {
+    background: linear-gradient(135deg, #003580, #0057b8);
+}
+
+.airbnb-card .booking-icon {
+    background: linear-gradient(135deg, #ff5a5f, #ff8e91);
+}
+
+.contact-card h3 {
+    color: #2c5530;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
     font-weight: 600;
 }
 
-.form-group {
-    margin-bottom: 1.5rem;
+.contact-card p {
+    color: #5a6c57;
+    line-height: 1.6;
+    margin: 0;
 }
 
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
+.contact-card a {
     color: #2c5530;
+    text-decoration: none;
     font-weight: 500;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #e8f5e8;
-    border-radius: 10px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-    font-family: inherit;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: #8fbc8f;
-}
-
-.btn-primary {
-    background: #2c5530;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
     transition: all 0.3s ease;
-    width: 100%;
 }
 
-.btn-primary:hover {
-    background: #1e3d21;
-    transform: translateY(-2px);
+.contact-card a:hover {
+    color: #1e3d21;
+    text-decoration: underline;
+}
+
+.booking-card a,
+.airbnb-card a {
+    color: #2c5530;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.booking-card:hover a {
+    color: #003580;
+}
+
+.airbnb-card:hover a {
+    color: #ff5a5f;
 }
 
 /* Footer */
@@ -551,13 +551,9 @@ footer {
         gap: 2rem;
     }
     
-    .contact-content {
+    .contact-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .form-row {
-        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
     .hero-btn {
@@ -580,6 +576,10 @@ footer {
     .nome h1 {
         font-size: 1.4rem;
     }
+    
+    .contact-card {
+        padding: 2rem 1.5rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -597,15 +597,19 @@ footer {
         font-size: 2rem;
     }
     
-    .contact-form {
-        padding: 1.5rem;
-    }
-    
     .gallery-grid {
         grid-template-columns: 1fr;
     }
     
     .services-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-card {
+        padding: 1.5rem 1rem;
     }
 }
